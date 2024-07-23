@@ -30,3 +30,4 @@ function mostrarCart() {
     document.getElementById("content").innerHTML = contentHTML;
 }
 mostrarCart();
+mostrarBotonCart();
