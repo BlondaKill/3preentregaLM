@@ -28,7 +28,16 @@ function addProducto(id) {
     const cart = cargarCartLS();
     cart.push(producto); 
     localStorage.setItem("cart", JSON.stringify(cart));
-    totalProductos();
+    mostrarBotonCart();
+}
+
+function deleteProducto(id) {
+    const cart = cargarCartLS();
+    const cartActualizado = cart.filter(item => item.id != id);
+    localStorage.setItem("cart", JSON.stringify(cartActualizado));
+    mostrarCart();
+    mostrarBotonCart();
+
 }
 
 function mostrarBotonCart() {

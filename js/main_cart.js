@@ -14,7 +14,7 @@ function mostrarCart() {
             <td><img src="img/${producto.imagen}" alt="${producto.nombre}" width="30"></td>    
             <td class="align-middle">${producto.nombre}</td>
             <td class="text-center align-middle"><span class="text-danger">$${producto.precio}</span></td>
-            <td class= "text-end align-middle"><button class="btn btn-danger btn-sm">Delete<i class="bi bi-trash3"></i></button></td>
+            <td class= "text-end align-middle"><button class="btn btn-danger btn-sm" onclick="deleteProducto(${producto.id});">Delete<i class="bi bi-trash3"></i></button></td>
         </tr>`;
         }
 
@@ -22,7 +22,7 @@ function mostrarCart() {
         </table>`;
     } else {
         contentHTML = `<div class="alert alert-primary my-5 text-center" role="alert">
-        <h3>Sin Productos en el Carrito!</h3>
+        <h2>Sin Productos en el Carrito!</h2>
         </div>`;
     }
 
