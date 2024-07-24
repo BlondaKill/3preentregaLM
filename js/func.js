@@ -10,7 +10,7 @@ function addProducto(id) {
     const producto = productos.find(item => item.id == id);
     const cart = cargarCartLS();
     cart.push(producto); 
-    guardarCartLS(cartActualizado);
+    guardarCartLS(cart);
     mostrarBotonCart();
 }
 
@@ -38,7 +38,7 @@ function cargarCartLS() {
 
 }
 
-function guardarCartLS() {
+function guardarCartLS(cart) {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
