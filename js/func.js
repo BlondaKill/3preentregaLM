@@ -1,8 +1,8 @@
 const productos = [
     {id:1, nombre:"Eres Vibracion", precio:120, imagen:"vibra.JPG", categoria:"libros"},
-    {id:2, nombre:"Eres Vibracion", precio:120, imagen:"chaklib.jpg", categoria:"libros"},
-    {id:3, nombre:"Eres Vibracion", precio:120, imagen:"loschak.jpg", categoria:"libros"},
-    {id:4, nombre:"Eres Vibracion", precio:120, imagen:"regaka.jpg", categoria:"libros"}
+    {id:2, nombre:"El Gran Libro de Los Chakras", precio:130, imagen:"chaklib.jpg", categoria:"libros"},
+    {id:3, nombre:"Los Chakras", precio:135, imagen:"loschak.jpg", categoria:"libros"},
+    {id:4, nombre:"Registros Akashicos", precio:200, imagen:"regaka.jpg", categoria:"libros"}
 ]
 
 
